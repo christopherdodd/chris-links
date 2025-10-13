@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Dodd - Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            padding-top: 40px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #667eea;
+            font-weight: bold;
+            background-image: url('christopher-dodd-transparent-bg-square.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile h1 {
+            color: white;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link {
+            display: block;
+            padding: 18px 25px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            background: white;
+        }
+
+        .link:active {
+            transform: translateY(-1px);
+        }
+
+        .link .icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                max-width: 350px;
+            }
+            
+            .profile h1 {
+                font-size: 1.8em;
+            }
+            
+            .profile p {
+                font-size: 1em;
+            }
+            
+            .link {
+                padding: 16px 20px;
+                font-size: 1em;
+            }
+            
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+        }
+
+        /* Animation for page load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .link:nth-child(1) {
+            animation-delay: 0.2s;
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .link:nth-child(2) {
+            animation-delay: 0.4s;
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image"></div>
+            <h1>Christopher Dodd</h1>
+            <p>Shopify Developer</p>
+        </div>
+        
+        <div class="links">
+            <a href="https://christopherdodd.com" class="link">
+                <span class="icon">🛍️</span>
+                Get Expert Shopify Help
+            </a>
+            
+            <a href="https://www.shopifythemedeveloper.com" class="link">
+                <span class="icon">📚</span>
+                Learn Shopify Development
+            </a>
+        </div>
+    </div>
+</body>
+</html>
